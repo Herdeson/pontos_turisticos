@@ -20,12 +20,14 @@ from core.api.viewsets import PontoTuristicoViewSet
 from atracoes.api.viewsets import AtracaoViewset
 from enderecos.api.viewsets import EnderecoViewSet
 from comentarios.api.viewsets import ComentarioViewset
+from avaliacoes.api.viewsets import AvaliacaoViewset
 
 router = routers.DefaultRouter()
 router.register(r'pontoturistico', PontoTuristicoViewSet)
 router.register(r'atracoes', AtracaoViewset)
 router.register(r'enderecos', EnderecoViewSet)
 router.register(r'comentarios', ComentarioViewset)
+router.register(r'avaliacoes', AvaliacaoViewset)
 
 urlpatterns = [
     path('', include(router.urls)),

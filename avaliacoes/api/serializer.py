@@ -1,7 +1,7 @@
 from rest_framework.serializers import ModelSerializer
-from atracoes.models import Atracao
+from avaliacoes.models import Avaliacao
 
-class AtracaoSerializer(ModelSerializer):
+class AvaliacaoSerializer(ModelSerializer):
     class Meta:
-        model = Atracao
-        fields = ('id','nome', 'descricao', 'horario_func', 'idade_minima')
+        model = Avaliacao
+        fields = ('id','user', 'comentario', 'nota', 'data')
