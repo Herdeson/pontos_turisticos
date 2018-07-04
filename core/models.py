@@ -28,6 +28,7 @@ class PontoTuristico(models.Model):
     foto = models.ImageField(upload_to='pontos_turisticos', null=True, blank=True)
     doc_identificacao = models.OneToOneField(
         DocIdentificacao, on_delete=models.CASCADE, null=True, blank=True)
+    image = models.ImageField(upload_to='pontos_turisticos', null=True, blank=True)
 
     @property
     def descricao_completa2(self):
