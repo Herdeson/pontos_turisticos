@@ -33,5 +33,5 @@ router.register(r'avaliacoes', AvaliacaoViewset)
 urlpatterns = [
     path('', include(router.urls)),
     path('admin/', admin.site.urls),
-    path('api-toke-auth/', obtain_auth_token),
+    path('api-token-auth/', obtain_auth_token),
 ]
